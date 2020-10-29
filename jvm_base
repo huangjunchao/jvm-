@@ -1,7 +1,7 @@
 java 常用命令
 jmap 查看内存对象情况
    查看前20个大对象
-   jmap -histo:live 进程号 | head -20
+   jmap -histo:live 进程号 | head -20 该命令会触发fullgc
 jstat -gcutil 进程号 时间间隔 次数
     每个1秒打印一次 总共打印10次
    jstat -gcutil 进程号 1000 10
